@@ -1,0 +1,17 @@
+package com.Bridgelabz.Regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class CheckNewString {
+    public static void main(String[] args) {
+        Pattern pattern = Pattern.compile("gret", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher("terg");
+        boolean matchFound = matcher.find();
+        if(matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
+    }
+}
